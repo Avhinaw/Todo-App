@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="app bg-black text-white flex flex-col justify-center items-center w-screen h-screen overflow-x-hidden">
+        <div class="wrap h-screen bg-black mt-5">
+            <div class="wrapper">
+                <input class="w-[40vw] p-3 rounded-md font-semibold text-lg text-black focus:outline-none" type="text" placeholder="Tasks">
+                <button id="add-btn" class="px-5 py-3 bg-teal-500 rounded-md text-white font-semibold m-3">Add</button>
+            </div>
+            <div id="tasks" class="flex flex-col gap-5">
+                <p id="pending-tasks" class="text-center py-3 px-0 m-auto w-[40vw] bg-zinc-500 rounded-md my-3">
+                    You have <span class="count-value">0</span>   pending tasks
+                </p>
+            </div>
+        </div>
+        <p id="error" class="hidden p-3 text-red-500 capitalize">Input cannot be empty!</p>
+
+
+
+
+    </div>
+
+
+
+
+    
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
